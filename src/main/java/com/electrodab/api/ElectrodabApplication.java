@@ -1,13 +1,14 @@
-package pizzeria.piz;
+package com.electrodab.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PizApplication {
+public class ElectrodabApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(PizApplication.class, args);
+		SpringApplication.run(ElectrodabApplication.class, args);
 	}
 
 }
+

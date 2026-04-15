@@ -1,9 +1,9 @@
-package pizzeria.piz.service;
+package com.electrodab.api.service;
 
 import org.springframework.stereotype.Service;
-import pizzeria.piz.exception.DuplicateIdException;
-import pizzeria.piz.exception.ResourceNotFoundException;
-import pizzeria.piz.model.Product;
+import com.electrodab.api.exception.DuplicateIdException;
+import com.electrodab.api.exception.ResourceNotFoundException;
+import com.electrodab.api.model.Product;
 
 import jakarta.annotation.PostConstruct;
 import java.util.ArrayList;
@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
 
-import pizzeria.piz.model.ProductStockValue;
+import com.electrodab.api.model.ProductStockValue;
 
 @Service
 public class ProductService {
@@ -266,3 +266,4 @@ public class ProductService {
         return minQuantity == null || product.getQuantity() >= minQuantity;
     }
 }
+

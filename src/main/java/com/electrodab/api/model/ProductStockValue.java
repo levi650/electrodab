@@ -1,22 +1,24 @@
-package pizzeria.piz.model;
+package com.electrodab.api.model;
 
-public class Product {
+public class ProductStockValue {
 
     private Long id;
     private String name;
     private String category;
     private double price;
     private int quantity;
+    private double stockValue;
 
-    public Product() {
+    public ProductStockValue() {
     }
 
-    public Product(Long id, String name, String category, double price, int quantity) {
+    public ProductStockValue(Long id, String name, String category, double price, int quantity, double stockValue) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.price = price;
         this.quantity = quantity;
+        this.stockValue = stockValue;
     }
 
     public Long getId() {
@@ -58,4 +60,13 @@ public class Product {
     public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
+
+    public double getStockValue() {
+        return stockValue;
+    }
+
+    public void setStockValue(double stockValue) {
+        this.stockValue = stockValue;
+    }
 }
+

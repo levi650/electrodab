@@ -1,15 +1,15 @@
-package pizzeria.piz.controller;
+package com.electrodab.api.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pizzeria.piz.api.ApiResponse;
-import pizzeria.piz.model.Product;
-import pizzeria.piz.service.ProductService;
+import com.electrodab.api.api.ApiResponse;
+import com.electrodab.api.model.Product;
+import com.electrodab.api.service.ProductService;
 
 import java.util.List;
 
-import pizzeria.piz.model.ProductStockValue;
+import com.electrodab.api.model.ProductStockValue;
 
 @RestController
 @RequestMapping("/api/products")
@@ -112,3 +112,4 @@ public class ProductController {
         return ResponseEntity.ok(ApiResponse.success(productService.getProductStockValues()));
     }
 }
+

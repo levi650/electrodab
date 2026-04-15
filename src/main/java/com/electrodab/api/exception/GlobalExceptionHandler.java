@@ -1,10 +1,10 @@
-package pizzeria.piz.exception;
+package com.electrodab.api.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-import pizzeria.piz.api.ApiError;
+import com.electrodab.api.api.ApiError;
 
 @RestControllerAdvice
 public class GlobalExceptionHandler {
@@ -33,3 +33,4 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(error);
     }
 }
+

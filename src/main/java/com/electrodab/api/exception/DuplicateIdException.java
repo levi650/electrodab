@@ -1,4 +1,4 @@
-package pizzeria.piz.exception;
+package com.electrodab.api.exception;
 
 public class DuplicateIdException extends RuntimeException {
 
@@ -6,3 +6,4 @@ public class DuplicateIdException extends RuntimeException {
         super(message);
     }
 }
+

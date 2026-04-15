@@ -1,4 +1,4 @@
-package pizzeria.piz.api;
+package com.electrodab.api.api;
 
 public class ApiResponse<T> {
 
@@ -43,3 +43,4 @@ public class ApiResponse<T> {
         this.data = data;
     }
 }
+

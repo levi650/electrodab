@@ -1,4 +1,4 @@
-package pizzeria.piz.api;
+package com.electrodab.api.api;
 
 public class ApiError {
 
@@ -29,3 +29,4 @@ public class ApiError {
         this.error = error;
     }
 }
+
